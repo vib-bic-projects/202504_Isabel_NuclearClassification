@@ -36,7 +36,7 @@ When this is done a new folder called processed inside your data folder will be 
 
 ![image](https://github.com/user-attachments/assets/795678da-cd9c-4617-95cc-a2723c9fec69)
 
-### Train single object classifiers and a composite classifier on the different channels
+### Create single object classifiers and a composite classifier on the different channels using the ROI mean intensity
 Don't forget to name the composite classifier "composite".
 
 ### Run Groovy Script and export measurements (Qupath)
