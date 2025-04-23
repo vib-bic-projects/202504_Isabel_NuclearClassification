@@ -43,8 +43,6 @@ Don't forget to name the composite classifier "composite".
 
 9. When this step is finished export the results by clicking in Measure>Export Measurements
 
-![image](https://github.com/user-attachments/assets/86e97520-ca34-41ec-94af-a40e033cbbc2)
-
 - Be sure to select all of the images you want to include
 - Export type should be Image if you want pooled results or Detections if you want a cell per row
 - Separator: Tab (.tsv)
