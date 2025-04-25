@@ -16,6 +16,7 @@ Belgium
 phone +32 (0)16/37.70.03
 
 When you publish data analyzed with this script please add the references of the used plug-ins:
+https://github.com/BIOP/ijp-kheops
 
 This script takes a multiple channel image containing a channel with a nuclear marker to enhance. The script generates the image with a new channel with enhanced nuclei for easier segmentation in Qupath.
 */
