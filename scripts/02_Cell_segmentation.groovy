@@ -4,6 +4,7 @@ def minimum_area = 20
 def maximum_area = 180
 def minimum_NeuroD2_intensity = 200
 def radiusPixels = 5  // Set your desired radius here
+def segmentation_channel = 'NeuroD2_processed' //Channel for the segmentation
 
 //Libraries
 import qupath.lib.objects.PathObject
@@ -140,7 +141,7 @@ def genCenterCircle( detections,radiusPixels ) {
 selectAnnotations()
 
 //Segment cell nuclei using neuroD2 marker
-def neuroD2_cells = detect_cells( 'NeuroD2_processed', 0.4, 'Area '+qupath.lib.common.GeneralTools.micrometerSymbol()+'^2', 'NeuroD2: Mean',minimum_area, maximum_area, minimum_NeuroD2_intensity )
+def neuroD2_cells = detect_cells( segmentation_channel, 0.4, 'Area '+qupath.lib.common.GeneralTools.micrometerSymbol()+'^2', segmentation_channel + ': Mean',minimum_area, maximum_area, minimum_NeuroD2_intensity )
 neuroD2_cells_circles = genCenterCircle(neuroD2_cells,radiusPixels)
 
 
